@@ -9,25 +9,12 @@
     "test-ui": "vitest --ui",
     "coverage": "vitest run --coverage",
     "pages:dev": "wrangler pages dev --compatibility-date=2023-12-06 --proxy 3000 -- npm run dev",
-    "pages:deploy": "npm run build && wrangler pages deploy ./dist/public"
+    "pages:deploy": "npm run build && wrangler pages deploy ./public"
   },
   "type": "module",
   "devDependencies": {
-    "@solidjs/meta": "^0.29.1",
-    "@solidjs/router": "^0.8.3",
-    "@solidjs/testing-library": "^0.5.2",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@types/testing-library__jest-dom": "^5.14.9",
-    "@vitest/coverage-c8": "^0.26.3",
-    "@vitest/ui": "^0.26.3",
-    "jsdom": "^20.0.3",
-    "solid-js": "^1.8.5",
-    "solid-start": "^0.3.10",
-    "solid-start-cloudflare-pages": "^0.3.10",
-    "solid-start-node": "^0.3.10",
-    "typescript": "^4.9.5",
-    "vite": "^4.4.9",
-    "vitest": "^0.26.3",
+    "@cloudflare/workers-types": "^4.20231121.0",
+    "typescript": "^5.3.3",
     "wrangler": "^3.19.0"
   }
 }
